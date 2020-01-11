@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/hint"
+        android:title="@string/hint"
+        android:icon="@drawable/hint"
+        app:actionLayout="@layout/custom_notification_layout"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/save"
+        android:title="@string/save"
+        android:icon="@drawable/ic_save"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:title=""
+        app:showAsAction="always"
+        android:icon="@drawable/ic_overflow_icon">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:title="@string/actionbar_share"
+                android:icon="@drawable/ic_share"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/settings"
+                android:title="@string/actionbar_settings"
+                android:icon="@drawable/ic_settings"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/exit"
+                android:title="@string/actionbar_exit"
+                android:icon="@drawable/ic_exit"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+</menu>

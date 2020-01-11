@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="@string/preference_unsure">
+        <SwitchPreference
+            android:key="@string/preference_mark_unsure"
+            android:title="@string/preference_mark_unsure"
+            android:summary="@string/preference_unsure_summary"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+           android:title="@string/preference_guidelines">
+           <SwitchPreference
+                 android:key="@string/preference_vertical_guidelines"
+                 android:title="@string/preference_vertical_guidelines"
+                 android:summary="@string/vertical_guidelines_summary"
+                 android:defaultValue="true"/>
+           <SwitchPreference
+                 android:key="@string/preference_horizontal_guidelines"
+                 android:title="@string/preference_horizontal_guidelines"
+                 android:summary="@string/horizontal_guidelines_summary"
+                 android:defaultValue="true"/>
+           <SwitchPreference
+                 android:key="@string/preference_block_guidelines"
+                 android:title="@string/preference_block_guidelines"
+                 android:summary="@string/block_guidelines_summary"
+                 android:defaultValue="true"/>
+           <SwitchPreference
+                 android:key="@string/preference_identical_number"
+                 android:title="@string/preference_identical_number"
+                 android:summary="@string/identical_number_guidelines_summary"
+                 android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/preference_info">
+        <Preference
+            android:key="@string/preference_app"
+            android:title="@string/preference_app"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/preference_rate_us">
+        <Preference
+            android:key="@string/preference_leave_feedback"
+            android:title="@string/preference_leave_feedback"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/preference_contact_us">
+        <Preference
+            android:summary="@string/preference_email"/>
+    </PreferenceCategory>
+
+
+
+
+</PreferenceScreen>

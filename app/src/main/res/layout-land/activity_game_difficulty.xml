@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+  <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+
+
+      <TextView
+          android:id="@+id/easy_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/Easy"
+          android:textColor="@color/ButtonColor"
+          android:textSize="50sp"
+          app:layout_constraintStart_toStartOf="@id/Button_view_easy"
+          app:layout_constraintBottom_toBottomOf="@id/Button_view_easy"
+          android:layout_marginLeft="8dp"
+          android:layout_marginBottom="8dp"/>
+
+      <TextView
+          android:id="@+id/advanced_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="8dp"
+          android:layout_marginLeft="8dp"
+          android:layout_marginBottom="8dp"
+          android:text="@string/difficulty_Advanced"
+          android:textColor="@color/ButtonColor"
+          android:textSize="50sp"
+          app:layout_constraintBottom_toTopOf="@+id/Button_view_professional"
+          app:layout_constraintStart_toStartOf="@+id/Button_view_advanced" />
+
+      <TextView
+          android:id="@+id/professional_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="8dp"
+          android:layout_marginLeft="8dp"
+          android:layout_marginBottom="8dp"
+          android:text="@string/difficulty_Professional"
+          android:textColor="@color/ButtonColor"
+          android:textSize="50sp"
+          app:layout_constraintBottom_toBottomOf="@+id/Button_view_professional"
+          app:layout_constraintStart_toStartOf="@+id/Button_view_professional" />
+
+        <ImageButton
+            android:id="@+id/Button_view_easy"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:background="@drawable/btn_easy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.3333"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/Button_view_advanced"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:background="@drawable/btn_advanced"
+            app:layout_constraintBottom_toTopOf="@id/Button_view_professional"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.3333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Button_view_easy"/>
+
+        <ImageButton
+            android:id="@+id/Button_view_professional"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:background="@drawable/btn_professional"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.3333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Button_view_advanced" />
+
+
+      <Button
+          android:id="@+id/buttonContinue"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="8dp"
+          android:layout_marginRight="8dp"
+          android:layout_marginBottom="8dp"
+          android:background="@drawable/main_button_background"
+          android:textColor="@color/Main_Text"
+          android:fontFamily="@font/cedarville_cursive"
+          android:text="@string/start_game"
+          android:textAllCaps="false"
+          android:textSize="19sp"
+          app:layout_constraintBottom_toBottomOf="@id/Button_view_easy"
+          app:layout_constraintDimensionRatio="w,3:1"
+          app:layout_constraintEnd_toEndOf="@+id/Button_view_easy"
+          android:visibility="invisible"/>
+      <Button
+          android:id="@+id/buttonContinue1"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="8dp"
+          android:layout_marginRight="8dp"
+          android:layout_marginBottom="8dp"
+          android:background="@drawable/main_button_background"
+          android:textColor="@color/Main_Text"
+          android:fontFamily="@font/cedarville_cursive"
+          android:text="@string/start_game"
+          android:textAllCaps="false"
+          android:textSize="19sp"
+          app:layout_constraintBottom_toBottomOf="@id/Button_view_advanced"
+          app:layout_constraintDimensionRatio="w,3:1"
+          app:layout_constraintEnd_toEndOf="@+id/Button_view_advanced"
+          android:visibility="invisible"/>
+      <Button
+          android:id="@+id/buttonContinue2"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="8dp"
+          android:layout_marginRight="8dp"
+          android:layout_marginBottom="8dp"
+          android:background="@drawable/main_button_background"
+          android:textColor="@color/Main_Text"
+          android:fontFamily="@font/cedarville_cursive"
+          android:text="@string/start_game"
+          android:textAllCaps="false"
+          android:textSize="19sp"
+          app:layout_constraintBottom_toBottomOf="@id/Button_view_professional"
+          app:layout_constraintDimensionRatio="w,3:1"
+          app:layout_constraintEnd_toEndOf="@+id/Button_view_professional"
+          android:visibility="invisible"/>
+
+      <ProgressBar
+          android:id="@+id/progressBar1"
+          style="?android:attr/progressBarStyleHorizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:progressTint="@color/MainButtonColor"
+          android:visibility="invisible"
+          android:layout_marginRight="16dp"
+          android:layout_marginLeft="16dp"
+          app:layout_constraintBottom_toTopOf="@+id/Button_view_advanced"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"/>
+
+      <ProgressBar
+          android:id="@+id/progressBar2"
+          style="?android:attr/progressBarStyleHorizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:progressTint="@color/MainButtonColor"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginRight="16dp"
+          android:layout_marginBottom="8dp"
+          android:visibility="invisible"
+          app:layout_constraintBottom_toTopOf="@+id/Button_view_professional"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/Button_view_advanced" />
+
+      <ProgressBar
+          android:id="@+id/progressBar3"
+          style="?android:attr/progressBarStyleHorizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:progressTint="@color/MainButtonColor"
+          android:layout_marginLeft="16dp"
+          android:layout_marginRight="16dp"
+          android:visibility="invisible"
+          app:layout_constraintBottom_toBottomOf="@+id/Button_view_professional"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/Button_view_professional" />
+
+
+
+  </android.support.constraint.ConstraintLayout>
+</ScrollView>

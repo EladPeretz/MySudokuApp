@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tableLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:shrinkColumns="*">
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                app:mrl_rippleAlpha="0.1"
+                app:mrl_rippleColor="@color/ButtonPressed"
+                app:mrl_rippleDelayClick="false">
+
+                <Button
+                    android:id="@+id/btnNumpad1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="1"
+                    android:textColor="@color/ButtonColor"
+                    android:textSize="18sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                app:mrl_rippleAlpha="0.1"
+                app:mrl_rippleColor="@color/ButtonPressed"
+                app:mrl_rippleDelayClick="false">
+
+                <Button
+                    android:id="@+id/btnNumpad2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="2"
+                    android:textColor="@color/ButtonColor"
+                    android:textSize="18sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                app:mrl_rippleAlpha="0.1"
+                app:mrl_rippleColor="@color/ButtonPressed"
+                app:mrl_rippleDelayClick="false">
+
+
+                <Button
+                    android:id="@+id/btnNumpad3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="3"
+                    android:textColor="@color/ButtonColor"
+                    android:textSize="18sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                app:mrl_rippleAlpha="0.1"
+                app:mrl_rippleColor="@color/ButtonPressed"
+                app:mrl_rippleDelayClick="false">
+
+                <Button
+                    android:id="@+id/btnNumpad4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="4"
+                    android:textColor="@color/ButtonColor"
+                    android:textSize="18sp" />
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                app:mrl_rippleAlpha="0.1"
+                app:mrl_rippleColor="@color/ButtonPressed"
+                app:mrl_rippleDelayClick="false">
+
+                <Button
+                    android:id="@+id/btnNumpad5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="5"
+                    android:textColor="@color/ButtonColor"
+                    android:textSize="18sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                app:mrl_rippleAlpha="0.1"
+                app:mrl_rippleColor="@color/ButtonPressed"
+                app:mrl_rippleDelayClick="false">
+
+                <Button
+                    android:id="@+id/btnNumpad6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="6"
+                    android:textColor="@color/ButtonColor"
+                    android:textSize="18sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                app:mrl_rippleAlpha="0.1"
+                app:mrl_rippleColor="@color/ButtonPressed"
+                app:mrl_rippleDelayClick="false">
+
+                <Button
+                    android:id="@+id/btnNumpad7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="7"
+                    android:textColor="@color/ButtonColor"
+                    android:textSize="18sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                app:mrl_rippleAlpha="0.1"
+                app:mrl_rippleColor="@color/ButtonPressed"
+                app:mrl_rippleDelayClick="false">
+
+                <Button
+                    android:id="@+id/btnNumpad8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="8"
+                    android:textColor="@color/ButtonColor"
+                    android:textSize="18sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                app:mrl_rippleAlpha="0.1"
+                app:mrl_rippleColor="@color/ButtonPressed"
+                app:mrl_rippleDelayClick="false">
+
+                <Button
+                    android:id="@+id/btnNumpad9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="9"
+                    android:textColor="@color/ButtonColor"
+                    android:textSize="18sp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                app:mrl_rippleAlpha="0.1"
+                app:mrl_rippleColor="@color/ButtonPressed"
+                app:mrl_rippleDelayClick="false">
+
+                <ImageButton
+                    android:id="@+id/btnNumpadEye"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="4dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_remove_red_eye_black_24dp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                app:mrl_rippleAlpha="0.1"
+                app:mrl_rippleColor="@color/ButtonPressed"
+                app:mrl_rippleDelayClick="false">
+
+                <ImageButton
+
+                    android:id="@+id/btnNumpadBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="4dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_delete_black_24dp" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                app:mrl_rippleAlpha="0.1"
+                app:mrl_rippleColor="@color/ButtonPressed"
+                app:mrl_rippleDelayClick="false">
+
+                <ImageButton
+                    android:id="@+id/buttonCheckBoard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:onClick="onCheckBoardButtonClicked"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="2dp"
+                    android:paddingBottom="4dp"
+                    android:src="@drawable/ic_done_all_black_24dp"
+                    android:visibility="invisible" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/tableRow"
+            app:layout_constraintDimensionRatio="h,3:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <fragment
+                    android:id="@+id/cellGroupFragment"
+                    android:name="com.eladper.sudoku.CellGroupFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintEnd_toStartOf="@id/cellGroupFragment2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <fragment
+                    android:id="@+id/cellGroupFragment2"
+                    android:name="com.eladper.sudoku.CellGroupFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintEnd_toStartOf="@id/cellGroupFragment3"
+                    app:layout_constraintStart_toEndOf="@id/cellGroupFragment"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <fragment
+                    android:id="@+id/cellGroupFragment3"
+                    android:name="com.eladper.sudoku.CellGroupFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/cellGroupFragment2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/tableRow2"
+            app:layout_constraintDimensionRatio="h,3:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableRow1">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <fragment
+                    android:id="@+id/cellGroupFragment4"
+                    android:name="com.eladper.sudoku.CellGroupFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintEnd_toStartOf="@id/cellGroupFragment5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <fragment
+                    android:id="@+id/cellGroupFragment5"
+                    android:name="com.eladper.sudoku.CellGroupFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="4"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintEnd_toStartOf="@id/cellGroupFragment6"
+                    app:layout_constraintStart_toEndOf="@id/cellGroupFragment4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <fragment
+                    android:id="@+id/cellGroupFragment6"
+                    android:name="com.eladper.sudoku.CellGroupFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/cellGroupFragment5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="h,3:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableRow">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <fragment
+                    android:id="@+id/cellGroupFragment7"
+                    android:name="com.eladper.sudoku.CellGroupFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintEnd_toStartOf="@id/cellGroupFragment8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <fragment
+                    android:id="@+id/cellGroupFragment8"
+                    android:name="com.eladper.sudoku.CellGroupFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="7"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintEnd_toStartOf="@id/cellGroupFragment9"
+                    app:layout_constraintStart_toEndOf="@id/cellGroupFragment7"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <fragment
+                    android:id="@+id/cellGroupFragment9"
+                    android:name="com.eladper.sudoku.CellGroupFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:tag="8"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="h,1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/cellGroupFragment8"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </TableRow>
+        </android.support.constraint.ConstraintLayout>
+    </TableLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout"
+        app:layout_constraintTop_toTopOf="@+id/tableLayout" />
+
+</android.support.constraint.ConstraintLayout>

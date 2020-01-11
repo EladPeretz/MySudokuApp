@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="App Info">
+        <Preference
+            android:title="Min Android Version"
+            android:summary="4.1 And Up"/>
+        <Preference
+            android:title="Current Version"
+            android:summary="1.0.1"/>
+        <Preference
+            android:title="App Size"
+            android:summary="11.16 MB"/>
+        <Preference
+            android:title="Development Group"
+            android:summary="E.P. Entertainmebt Inc."/>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

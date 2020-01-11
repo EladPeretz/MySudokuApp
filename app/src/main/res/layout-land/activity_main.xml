@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/main_background_image"
+        android:scaleType="centerCrop"/>
+
+
+        <TextView
+            android:id="@+id/Sudoku_Master_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/app_name"
+            android:textAllCaps="false"
+            android:textColor="@color/MainButtonColor"
+            android:textSize="35sp"
+            app:fontFamily="@font/cedarville_cursive"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sudoku_Master_Title"
+        app:layout_constraintVertical_bias="0.39">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="200dp"
+                android:layout_height="64dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rounded_button"
+                app:mrl_rippleAlpha="0.3"
+                app:mrl_rippleColor="@color/ButtonPressed"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleOverlay="true">
+
+
+                <Button
+                    android:id="@+id/NewGameButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/main_button_background"
+                    android:text="@string/New_Game"
+                    android:textColor="@color/Main_Text" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="200dp"
+                android:layout_height="64dp"
+                android:background="@drawable/rounded_button"
+                app:mrl_rippleAlpha="0.3"
+                app:mrl_rippleColor="@color/ButtonPressed"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleOverlay="true">
+
+
+                <Button
+                    android:id="@+id/ContinueButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/main_button_background"
+                    android:text="@string/Continue"
+                    android:textColor="@color/Main_Text" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="200dp"
+                android:layout_height="64dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rounded_button"
+                app:mrl_rippleAlpha="0.3"
+                app:mrl_rippleColor="@color/ButtonPressed"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleOverlay="true">
+
+                <Button
+                    android:id="@+id/SettingsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/main_button_background"
+                    android:text="@string/actionbar_settings"
+                    android:textColor="@color/Main_Text" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="200dp"
+                android:layout_height="64dp"
+                android:background="@drawable/rounded_button"
+                app:mrl_rippleAlpha="0.3"
+                app:mrl_rippleColor="@color/ButtonPressed"
+                app:mrl_rippleDelayClick="false"
+                app:mrl_rippleOverlay="true">
+
+                <Button
+                    android:id="@+id/ExitButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/main_button_background"
+                    android:text="@string/Exit"
+                    android:textColor="@color/Main_Text" />
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/1033173712"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        ads:layout_constraintVertical_bias="0.0"></com.google.android.gms.ads.AdView>
+    </android.support.constraint.ConstraintLayout>
+
