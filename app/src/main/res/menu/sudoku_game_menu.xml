@@ -5,7 +5,7 @@
     <item
         android:id="@+id/hint"
         android:title="@string/hint"
-        android:icon="@drawable/hint"
+        android:icon="@drawable/ic_light_bulb"
         app:actionLayout="@layout/custom_notification_layout"
         app:showAsAction="always" />
     <item

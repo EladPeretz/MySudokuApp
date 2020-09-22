@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#1139BD</color>
     <color name="colorAccent">#3AFFE1</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimaryDark">#959B9B</color>
     <color name="ButtonColor">#b5bedc</color>
     <color name="ButtonPressed">#32E8E8EC</color>
     <color name="MainButtonColor">#00B8D4</color>
@@ -11,4 +11,6 @@
     <color name="Main_Text">#2CAAFF</color>
     <color name="MainButtonStroke">#0091EA</color>
     <color name="WelcomeScreenMiddle">#0037DD</color>
+    <color name="NotePressed">#8FE3FAFD</color>
+    <color name="recycler_view_background">#48ACEC</color>
 </resources>

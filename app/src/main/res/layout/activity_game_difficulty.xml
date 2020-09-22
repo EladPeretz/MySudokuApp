@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="@string/Easy"
         android:textColor="@color/ButtonColor"
-        android:textSize="50sp"
+        android:textSize="35sp"
         app:layout_constraintStart_toStartOf="@id/Button_view_easy"
         app:layout_constraintBottom_toBottomOf="@id/Button_view_easy"
         android:layout_marginLeft="8dp"
@@ -28,7 +28,7 @@
         android:layout_marginBottom="8dp"
         android:text="@string/difficulty_Advanced"
         android:textColor="@color/ButtonColor"
-        android:textSize="50sp"
+        android:textSize="35sp"
         app:layout_constraintBottom_toTopOf="@+id/Button_view_professional"
         app:layout_constraintStart_toStartOf="@+id/Button_view_advanced" />
 
@@ -41,7 +41,7 @@
         android:layout_marginBottom="8dp"
         android:text="@string/difficulty_Professional"
         android:textColor="@color/ButtonColor"
-        android:textSize="50sp"
+        android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="@+id/Button_view_professional"
         app:layout_constraintStart_toStartOf="@+id/Button_view_professional" />
 
@@ -55,7 +55,6 @@
         android:paddingRight="8dp"
         android:textSize="30sp"
         android:textColor="@color/ButtonColor"
-        android:background="@drawable/btn_easy"
         app:layout_constraintBottom_toTopOf="@id/Button_view_advanced"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.3333"
@@ -67,7 +66,6 @@
         android:id="@+id/Button_view_advanced"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/btn_advanced"
         android:gravity="bottom"
         app:layout_constraintBottom_toTopOf="@id/Button_view_professional"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +77,6 @@
         android:id="@+id/Button_view_professional"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/btn_professional"
         android:gravity="bottom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

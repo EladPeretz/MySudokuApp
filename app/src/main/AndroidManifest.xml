@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.eladper.sudoku">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -13,8 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
-        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
-        >
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".BoardNoteActivity"
+            android:noHistory="true"/>
         <activity
             android:name=".AppInfoActivity"
             android:label="@string/title_activity_app_info"

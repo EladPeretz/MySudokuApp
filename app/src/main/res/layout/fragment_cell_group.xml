@@ -26,7 +26,7 @@
             android:minWidth="30dp"
             android:tag="0"
             android:text=""
-            android:textAlignment="center" />
+            android:textAlignment="center"/>
 
         <TextView
             android:id="@+id/textView2"

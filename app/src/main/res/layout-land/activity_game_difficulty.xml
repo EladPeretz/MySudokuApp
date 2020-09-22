@@ -10,7 +10,7 @@
 
   <android.support.constraint.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/main_background">
 
 
@@ -56,10 +56,9 @@
         <ImageButton
             android:id="@+id/Button_view_easy"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="330dp"
             android:layout_weight="1"
             android:gravity="bottom"
-            android:background="@drawable/btn_easy"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.3333"
             app:layout_constraintHorizontal_bias="0.0"
@@ -69,10 +68,9 @@
         <ImageButton
             android:id="@+id/Button_view_advanced"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="330dp"
             android:layout_weight="1"
             android:gravity="bottom"
-            android:background="@drawable/btn_advanced"
             app:layout_constraintBottom_toTopOf="@id/Button_view_professional"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.3333"
@@ -82,10 +80,9 @@
         <ImageButton
             android:id="@+id/Button_view_professional"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="330dp"
             android:layout_weight="1"
             android:gravity="bottom"
-            android:background="@drawable/btn_professional"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent="0.3333"

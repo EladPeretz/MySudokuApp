@@ -8,13 +8,13 @@
             android:summary="4.1 And Up"/>
         <Preference
             android:title="Current Version"
-            android:summary="1.0.1"/>
+            android:summary="1.0.2"/>
         <Preference
             android:title="App Size"
-            android:summary="11.16 MB"/>
+            android:summary="7.7 MB"/>
         <Preference
             android:title="Development Group"
-            android:summary="E.P. Entertainmebt Inc."/>
+            android:summary="E.P. Entertainment Inc."/>
     </PreferenceCategory>
 
 

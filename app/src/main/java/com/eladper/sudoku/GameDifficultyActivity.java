@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -27,8 +27,8 @@ public class GameDifficultyActivity extends AppCompatActivity implements View.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        statusBarHide();
         setContentView(R.layout.activity_game_difficulty);
+
 
         startGame=findViewById(R.id.buttonContinue);
         startGame1=findViewById(R.id.buttonContinue1);
@@ -46,6 +46,10 @@ public class GameDifficultyActivity extends AppCompatActivity implements View.On
         advanced.bringToFront();
         professional.bringToFront();
 
+        btnProfessional.setBackgroundResource(R.drawable.professional);
+        btnEasy.setBackgroundResource(R.drawable.easy_default);
+        btnAdvanced.setBackgroundResource(R.drawable.advanced);
+
         startGame.setOnClickListener((View.OnClickListener)this);
         startGame1.setOnClickListener((View.OnClickListener)this);
         startGame2.setOnClickListener((View.OnClickListener)this);
@@ -61,12 +65,15 @@ public class GameDifficultyActivity extends AppCompatActivity implements View.On
             case R.id.buttonContinue: {
                 startGame.setOnClickListener(null);
                 startGame.setText(R.string.Loading);
+                btnEasy.setOnClickListener(null);
+                btnAdvanced.setOnClickListener(null);
+                btnProfessional.setOnClickListener(null);
                 progressBar1.setVisibility(View.VISIBLE);
                 progAnimation(progressBar1);
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Intent mySuperIntent = new Intent(GameDifficultyActivity.this, SudokuGameActivity.class);
+                        Intent mySuperIntent = new Intent(GameDifficultyActivity.this, BoardNoteActivity.class);
                         mySuperIntent.putExtra("difficulty", selectedDifficulty);
                         startActivity(mySuperIntent);
                         finish();
@@ -77,12 +84,15 @@ public class GameDifficultyActivity extends AppCompatActivity implements View.On
             case R.id.buttonContinue1: {
                 startGame1.setOnClickListener(null);
                 startGame1.setText(R.string.Loading);
+                btnEasy.setOnClickListener(null);
+                btnAdvanced.setOnClickListener(null);
+                btnProfessional.setOnClickListener(null);
                 progressBar2.setVisibility(View.VISIBLE);
                 progAnimation(progressBar2);
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Intent mySuperIntent = new Intent(GameDifficultyActivity.this, SudokuGameActivity.class);
+                        Intent mySuperIntent = new Intent(GameDifficultyActivity.this, BoardNoteActivity.class);
                         mySuperIntent.putExtra("difficulty", selectedDifficulty);
                         startActivity(mySuperIntent);
                         finish();
@@ -93,12 +103,15 @@ public class GameDifficultyActivity extends AppCompatActivity implements View.On
             case R.id.buttonContinue2: {
                 startGame2.setOnClickListener(null);
                 startGame2.setText(R.string.Loading);
+                btnEasy.setOnClickListener(null);
+                btnAdvanced.setOnClickListener(null);
+                btnProfessional.setOnClickListener(null);
                 progressBar3.setVisibility(View.VISIBLE);
                 progAnimation(progressBar3);
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Intent mySuperIntent = new Intent(GameDifficultyActivity.this, SudokuGameActivity.class);
+                        Intent mySuperIntent = new Intent(GameDifficultyActivity.this, BoardNoteActivity.class);
                         mySuperIntent.putExtra("difficulty", selectedDifficulty);
                         startActivity(mySuperIntent);
                         finish();
@@ -107,9 +120,9 @@ public class GameDifficultyActivity extends AppCompatActivity implements View.On
                 return;
             }
             case R.id.Button_view_easy: {
+                btnProfessional.setBackgroundResource(R.drawable.professional);
                 btnEasy.setBackgroundResource(R.drawable.easybright);
-                btnAdvanced.setBackgroundResource(R.drawable.btn_advanced);
-                btnProfessional.setBackgroundResource(R.drawable.btn_professional);
+                btnAdvanced.setBackgroundResource(R.drawable.advanced);
                 startGame.setVisibility(View.VISIBLE);
                 startGame1.setVisibility(View.INVISIBLE);
                 startGame2.setVisibility(View.INVISIBLE);
@@ -117,8 +130,8 @@ public class GameDifficultyActivity extends AppCompatActivity implements View.On
                 return;
             }
             case R.id.Button_view_advanced: {
-                btnEasy.setBackgroundResource(R.drawable.btn_easy);
-                btnProfessional.setBackgroundResource(R.drawable.btn_professional);
+                btnProfessional.setBackgroundResource(R.drawable.professional);
+                btnEasy.setBackgroundResource(R.drawable.easy_default);
                 btnAdvanced.setBackgroundResource(R.drawable.advancedbright);
                 startGame.setVisibility(View.INVISIBLE);
                 startGame1.setVisibility(View.VISIBLE);
@@ -128,8 +141,8 @@ public class GameDifficultyActivity extends AppCompatActivity implements View.On
             }
             case R.id.Button_view_professional: {
                 btnProfessional.setBackgroundResource(R.drawable.professionalbright);
-                btnEasy.setBackgroundResource(R.drawable.btn_easy);
-                btnAdvanced.setBackgroundResource(R.drawable.btn_advanced);
+                btnEasy.setBackgroundResource(R.drawable.easy_default);
+                btnAdvanced.setBackgroundResource(R.drawable.advanced);
                 startGame.setVisibility(View.INVISIBLE);
                 startGame1.setVisibility(View.INVISIBLE);
                 startGame2.setVisibility(View.VISIBLE);
@@ -158,24 +171,6 @@ public class GameDifficultyActivity extends AppCompatActivity implements View.On
 
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        statusBarHide();
-    }
-    // A function to hide the status bar.
-    public void statusBarHide() {
-        // If the Android version is lower than Jellybean, use this call to hide
-        // the status bar.
-        if (Build.VERSION.SDK_INT < 16) {
-            getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                    WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        } else {
-            View decorView = getWindow().getDecorView();
-            // Hide the status bar.
-            int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
-            decorView.setSystemUiVisibility(uiOptions);
-        }
-    }
+
 
 }

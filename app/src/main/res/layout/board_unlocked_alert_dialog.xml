@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_alert_dialog"
+    android:paddingRight="24dp"
+    android:paddingLeft="24dp"
+    android:paddingTop="24dp"
+    android:paddingBottom="37dp"
+    android:elevation="20dp">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:gravity="center_horizontal"
+        android:lines="1"
+        android:text="Congratulations!!!"
+        android:textAllCaps="false"
+        android:textColor="@color/ButtonColor"
+        android:textSize="30sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/board_unlocked_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/transparent"
+        android:lines="1"
+        android:text=""
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/ButtonColor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+    <ImageView
+        android:id="@+id/image_view_board"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/materialRippleLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/board_unlocked_text" />
+
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/materialRippleLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:mrl_rippleAlpha="0.3"
+        app:mrl_rippleColor="@color/ButtonPressed"
+        app:mrl_rippleDelayClick="false"
+        app:mrl_rippleOverlay="true">
+
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_button_background"
+            android:paddingRight="42dp"
+            android:paddingLeft="42dp"
+            android:text="@string/ContinueSmall"
+            android:textAllCaps="false"
+            android:textColor="@color/Main_Text"
+            android:textSize="30sp" />
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+
+</android.support.constraint.ConstraintLayout>

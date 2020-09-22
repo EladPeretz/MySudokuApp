@@ -8,7 +8,12 @@
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/toolbar"/>
+        layout="@layout/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TableLayout
         android:id="@+id/tableLayout2"
@@ -43,7 +48,7 @@
                 <Button
                     android:id="@+id/btnNumpad1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:text="1"
@@ -61,7 +66,7 @@
                 <Button
                     android:id="@+id/btnNumpad2"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:text="2"
@@ -80,7 +85,7 @@
                 <Button
                     android:id="@+id/btnNumpad3"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:text="3"
@@ -105,7 +110,7 @@
                 <Button
                     android:id="@+id/btnNumpad4"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:text="4"
@@ -124,7 +129,7 @@
                 <Button
                     android:id="@+id/btnNumpad5"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:text="5"
@@ -142,7 +147,7 @@
                 <Button
                     android:id="@+id/btnNumpad6"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:text="6"
@@ -167,7 +172,7 @@
                 <Button
                     android:id="@+id/btnNumpad7"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:text="7"
@@ -185,7 +190,7 @@
                 <Button
                     android:id="@+id/btnNumpad8"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:text="8"
@@ -202,8 +207,8 @@
 
                 <Button
                     android:id="@+id/btnNumpad9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:text="9"
@@ -215,7 +220,7 @@
 
         <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <com.balysv.materialripple.MaterialRippleLayout
                 android:layout_width="70dp"
@@ -306,176 +311,176 @@
             android:layout_weight="1">
 
 
-        <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@+id/tableRow"
-            app:layout_constraintDimensionRatio="h,3:1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/tableRow"
+                app:layout_constraintDimensionRatio="h,3:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <android.support.constraint.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-
-                <fragment
-                    android:id="@+id/cellGroupFragment"
-                    android:name="com.eladper.sudoku.CellGroupFragment"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:tag="0"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintDimensionRatio="h,1:1"
-                    app:layout_constraintEnd_toStartOf="@id/cellGroupFragment2"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <fragment
-                    android:id="@+id/cellGroupFragment2"
-                    android:name="com.eladper.sudoku.CellGroupFragment"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:tag="1"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintDimensionRatio="h,1:1"
-                    app:layout_constraintEnd_toStartOf="@id/cellGroupFragment3"
-                    app:layout_constraintStart_toEndOf="@id/cellGroupFragment"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <fragment
-                    android:id="@+id/cellGroupFragment3"
-                    android:name="com.eladper.sudoku.CellGroupFragment"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:tag="2"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintDimensionRatio="h,1:1"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/cellGroupFragment2"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </android.support.constraint.ConstraintLayout>
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@+id/tableRow2"
-            app:layout_constraintDimensionRatio="h,3:1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tableRow1">
-
-            <android.support.constraint.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <fragment
-                    android:id="@+id/cellGroupFragment4"
-                    android:name="com.eladper.sudoku.CellGroupFragment"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:tag="3"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintDimensionRatio="h,1:1"
-                    app:layout_constraintEnd_toStartOf="@id/cellGroupFragment5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <fragment
-                    android:id="@+id/cellGroupFragment5"
-                    android:name="com.eladper.sudoku.CellGroupFragment"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:tag="4"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintDimensionRatio="h,1:1"
-                    app:layout_constraintEnd_toStartOf="@id/cellGroupFragment6"
-                    app:layout_constraintStart_toEndOf="@id/cellGroupFragment4"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <fragment
-                    android:id="@+id/cellGroupFragment6"
-                    android:name="com.eladper.sudoku.CellGroupFragment"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:tag="5"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintDimensionRatio="h,1:1"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/cellGroupFragment5"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </android.support.constraint.ConstraintLayout>
-        </TableRow>
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
 
-        <TableRow
-            android:id="@+id/tableRow2"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintDimensionRatio="h,3:1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tableRow">
+                    <fragment
+                        android:id="@+id/cellGroupFragment"
+                        android:name="com.eladper.sudoku.CellGroupFragment"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:tag="0"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="h,1:1"
+                        app:layout_constraintEnd_toStartOf="@id/cellGroupFragment2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-            <android.support.constraint.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <fragment
+                        android:id="@+id/cellGroupFragment2"
+                        android:name="com.eladper.sudoku.CellGroupFragment"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:tag="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="h,1:1"
+                        app:layout_constraintEnd_toStartOf="@id/cellGroupFragment3"
+                        app:layout_constraintStart_toEndOf="@id/cellGroupFragment"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                <fragment
-                    android:id="@+id/cellGroupFragment7"
-                    android:name="com.eladper.sudoku.CellGroupFragment"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:tag="6"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintDimensionRatio="h,1:1"
-                    app:layout_constraintEnd_toStartOf="@id/cellGroupFragment8"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    <fragment
+                        android:id="@+id/cellGroupFragment3"
+                        android:name="com.eladper.sudoku.CellGroupFragment"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:tag="2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="h,1:1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/cellGroupFragment2"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                <fragment
-                    android:id="@+id/cellGroupFragment8"
-                    android:name="com.eladper.sudoku.CellGroupFragment"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:tag="7"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintDimensionRatio="h,1:1"
-                    app:layout_constraintEnd_toStartOf="@id/cellGroupFragment9"
-                    app:layout_constraintStart_toEndOf="@id/cellGroupFragment7"
-                    app:layout_constraintTop_toTopOf="parent" />
+                </android.support.constraint.ConstraintLayout>
 
-                <fragment
-                    android:id="@+id/cellGroupFragment9"
-                    android:name="com.eladper.sudoku.CellGroupFragment"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:tag="8"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintDimensionRatio="h,1:1"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/cellGroupFragment8"
-                    app:layout_constraintTop_toTopOf="parent" />
+            </TableRow>
 
-            </android.support.constraint.ConstraintLayout>
-        </TableRow>
+            <TableRow
+                android:id="@+id/tableRow"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/tableRow2"
+                app:layout_constraintDimensionRatio="h,3:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableRow1">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <fragment
+                        android:id="@+id/cellGroupFragment4"
+                        android:name="com.eladper.sudoku.CellGroupFragment"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:tag="3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="h,1:1"
+                        app:layout_constraintEnd_toStartOf="@id/cellGroupFragment5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <fragment
+                        android:id="@+id/cellGroupFragment5"
+                        android:name="com.eladper.sudoku.CellGroupFragment"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:tag="4"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="h,1:1"
+                        app:layout_constraintEnd_toStartOf="@id/cellGroupFragment6"
+                        app:layout_constraintStart_toEndOf="@id/cellGroupFragment4"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <fragment
+                        android:id="@+id/cellGroupFragment6"
+                        android:name="com.eladper.sudoku.CellGroupFragment"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:tag="5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="h,1:1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/cellGroupFragment5"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="h,3:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableRow">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <fragment
+                        android:id="@+id/cellGroupFragment7"
+                        android:name="com.eladper.sudoku.CellGroupFragment"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:tag="6"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="h,1:1"
+                        app:layout_constraintEnd_toStartOf="@id/cellGroupFragment8"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <fragment
+                        android:id="@+id/cellGroupFragment8"
+                        android:name="com.eladper.sudoku.CellGroupFragment"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:tag="7"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="h,1:1"
+                        app:layout_constraintEnd_toStartOf="@id/cellGroupFragment9"
+                        app:layout_constraintStart_toEndOf="@id/cellGroupFragment7"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <fragment
+                        android:id="@+id/cellGroupFragment9"
+                        android:name="com.eladper.sudoku.CellGroupFragment"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:tag="8"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="h,1:1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/cellGroupFragment8"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+            </TableRow>
         </android.support.constraint.ConstraintLayout>
     </TableLayout>
 

@@ -2,6 +2,7 @@
     <string name="app_name">Sudoku Master</string>
     <string name="New_Game">NEW GAME</string>
     <string name="Continue">CONTINUE</string>
+    <string name="ContinueSmall">Continue</string>
     <string name="About">ABOUT</string>
     <string name="Exit">EXIT</string>
     <string name="New_Game_Alert_Title">Difficulty</string>
@@ -23,7 +24,7 @@
     <string name="difficulty_easy">Easy</string>
     <string name="difficulty_Advanced">Advanced</string>
     <string name="difficulty_Professional">Professional</string>
-    <string name="start_game">Start Game</string>
+    <string name="start_game">Continue</string>
     <string name="add_new_board">Add new board</string>
     <string name="choose_number">Choose number</string>
     <string name="choose_a_number">Choose number to place:</string>
@@ -53,10 +54,13 @@
     <string name="block_guidelines_summary">If enabled, a surrounding block will be marked around its tapped cell.</string>
     <string name="identical_number_guidelines_summary">If enabled, cells containing identical numbers to the number on the tapped cell will be highlighted.</string>
     <string name="Loading">Loading...</string>
-    <string name="percentage"></string>
     <string name="title_activity_app_info">AppInfoActivity</string>
     <string name="TileToRevealItsNumber">Choose A Tile To Reveal Its Number</string>
     <string name="hint">hint</string>
     <string name="save">save</string>
+    <string name="reward_alert_dialog_text">You have been awarded:</string>
+    <string name="claim">Claim</string>
+    <string name="no_thanks">No thanks</string>
+    <string name="not_completed">not\ncompleted</string>
 
 </resources>

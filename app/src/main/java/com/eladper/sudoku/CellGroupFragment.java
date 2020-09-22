@@ -102,7 +102,6 @@ public class CellGroupFragment extends Fragment {
                 R.id.textView5, R.id.textView6, R.id.textView7, R.id.textView8, R.id.textView9};
         TextView currentView = view.findViewById(textViews[position]);
         currentView.setText(String.valueOf(value));
-        currentView.setTextColor(getResources().getColor(R.color.RestoredNumbersColor));
     }
 
     //
